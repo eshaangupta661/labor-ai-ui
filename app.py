@@ -47,9 +47,9 @@ if st.button("Check Fairness"):
             st.success(f"Predicted Fair Wage: ₹ {result['predicted_wage']}")
 
             if result["fairness_status"] == "Underpaid":
-                st.error("⚠ Worker is UNDERPAID")
+                st.error("Worker is UNDERPAID")
             else:
-                st.success("✅ Wage is FAIR")
+                st.success("Wage is FAIR")
         else:
             st.error("Backend error.")
 
